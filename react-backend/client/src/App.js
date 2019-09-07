@@ -28,9 +28,9 @@ class App extends Component {
 
   render() {
     return (
-      <div classname="App"> //wrapper for material ui
-        <NavBar /> //blue navibar
-        <DropzoneArea  //zone where you upload
+      <div classname="App">
+        <NavBar />
+        <DropzoneArea  
         onChange={this.handleChange.bind(this)}
         />
       </div>
