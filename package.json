@@ -1,0 +1,23 @@
+{
+  "name": "unight",
+  "version": "1.0.0",
+  "description": "PennApps",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hakyungs@github.com/hakyungs/Unight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakyungs/Unight/issues"
+  },
+  "homepage": "https://github.com/hakyungs/Unight#readme"
+}
