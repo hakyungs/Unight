@@ -1,7 +1,6 @@
 # Unight
 PennApps XX
 
-This is the first commit
-This is the third commit
-
-last test
+npm install
+npm start
+localhost:3000
