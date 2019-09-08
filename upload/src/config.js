@@ -1,6 +1,6 @@
 export const Config = {
   bucketName: 'unight-uploaded',
   region: 'us-east-2',
-  accessKeyId: 'AKIAJYVZTTCZEGEN26QQ',
-  secretAccessKey: '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'
+  accessKeyId: 'AKIAJAKZ7R766R6B2S3Q',
+  secretAccessKey: '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'
 }
