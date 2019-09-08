@@ -9,7 +9,6 @@ console.log("Server starting at localhost 3000");
 var image_path = "Example.jpeg";
 var num_row = 2;
 var num_col = 2;
-var user_num = 0;
 var res_files = is.splitImage(image_path,num_row,num_col);
 
 
@@ -20,9 +19,11 @@ http.createServer(function(req, res){
     rs.pipe(res);
   } else {
   var q = url.parse(req.url, true).query;
-  var user_num = q.user;
-  console.log(user_num);
-  var rs = fs.createReadStream("res-p"+user_num.toString()+".jpg");
+  var user_Row = q.userRow;
+  var user_Col = q.userCol;
+  console.log(user_Row + user_Col);
+  var rs = fs.createReadStream("p-r"+user_Row.toString() + 'c'
+      + user_Col.toString() + ".jpg");
   rs.pipe(res);
  }
 }).listen(3000);
