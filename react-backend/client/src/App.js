@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {DropzoneDialog} from 'material-ui-dropzone'
 import Button from '@material-ui/core/Button';
 import NavBar from './components/NavBar'
+import { upload } from './upload.js'
  
 export default class DropzoneDialogExample extends Component {
     constructor(props) {
@@ -43,7 +44,7 @@ export default class DropzoneDialogExample extends Component {
                 </Button>
                 <DropzoneDialog
                     open={this.state.open}
-                    onSave={this.handleSave.bind(this)}
+                    onSave={upload()}
                     acceptedFiles={['image/jpeg', 'image/png', 'image/bmp']}
                     showPreviews={true}
                     maxFileSize={5000000}
