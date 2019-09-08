@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import ReactS3 from 'react-s3';
+import { Config }  from './config.js'
 import {DropzoneDialog} from 'material-ui-dropzone'
 import Button from '@material-ui/core/Button';
 import NavBar from './components/NavBar'
 
-const config = {
-  bucketName: 'unight-uploaded',
-  region: 'us-east-2',
-  accessKeyId: 'AKIAISB7F6D6IKSPXHVA',
-  secretAccessKey: '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'
-}
 
 export default class DropzoneDialogExample extends Component {
     constructor(props) {
@@ -33,7 +28,8 @@ export default class DropzoneDialogExample extends Component {
             open: false,
         });
         console.log(files[0]);
-        ReactS3.uploadFile(files[0], config)
+        console.log(Config)
+        ReactS3.uploadFile(files[0], Config)
         .then((data) => {
           console.log(data);
         })
